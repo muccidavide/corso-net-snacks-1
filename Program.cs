@@ -162,7 +162,53 @@ Console.WriteLine($"La somma dei numeri in posizione dispari è {sum}");
 */
 
 // Snack 9
+/*
+int[] numbersUser = new int[20];
+int sumNumberUser = 0;
+int counter = 0;
 
+while(sumNumberUser < 50)
+{
+   Console.WriteLine("Inserisci un numero");
+   int userNumber = Convert.ToInt32(Console.ReadLine());
+    sumNumberUser += userNumber;
+    counter++;
+    for (int i = 0; i < numbersUser.Length; i++)
+    {
+        numbersUser[counter] = userNumber;
+    }
+};
+
+Console.WriteLine($"la somma è maggiore di 50 cioè {sumNumberUser}");
+*/
+
+// Snack 10
+
+Console.WriteLine("Inserisci un numero");
+int numberUser = Convert.ToInt32(Console.ReadLine());
+
+for (int i = 0; i < numberUser; i++)
+{
+    int[] userNumbersArray = new int[10];
+ 
+    for (int b = 0; b < 10; b++)
+    {
+        Random rnd = new Random();
+        int num = rnd.Next(0,10);
+        userNumbersArray[b] = num;
+    }
+
+    foreach (var item in userNumbersArray)
+    {
+        Console.Write(item);
+        
+    }
+
+    Console.WriteLine();
+
+    userNumbersArray = new int[10];
+
+}
 
 
 
