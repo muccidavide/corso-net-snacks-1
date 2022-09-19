@@ -182,9 +182,9 @@ while(sumNumberUser < 50)
 Console.WriteLine($"la somma è maggiore di 50 cioè {sumNumberUser}");
 */
 
-// Snack 10
+// Snack 10 
 
-Console.WriteLine("Inserisci un numero");
+/*Console.WriteLine("Inserisci un numero");
 int numberUser = Convert.ToInt32(Console.ReadLine());
 
 for (int i = 0; i < numberUser; i++)
@@ -209,8 +209,25 @@ for (int i = 0; i < numberUser; i++)
     userNumbersArray = new int[10];
 
 }
+*/
 
+int numberInsert = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(PariDispari(numberInsert));
 
+string PariDispari(int number)
+{
+    string result;
+    if (number % 2 == 0)
+    {
+        result = "Numero è pari";
+    }
+    else
+    {
+        result = "Numero è dispari";
+    }
+
+    return result;
+}
 
 
 
